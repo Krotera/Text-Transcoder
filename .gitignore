@@ -1,0 +1,5 @@
+# Local I/O files
+*.txt
+
+# Executable
+*.exe
