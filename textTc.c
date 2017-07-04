@@ -37,41 +37,47 @@ int main(int argc, char *argv[]) {
 	char byte[9];
 	
 	// Collect execution options
-	while ((curr = getopt(argc, argv, "abfhxs2:")) != -1) {
+	while ((curr = getopt(argc, argv, "aAbBfFhHxXsS2:")) != -1) {
 		switch (curr) {
 			case 'a':
+			case 'A':
 				a_flag = 1;
 				break;
 			case 'b':
+			case 'B':
 				b_flag = 1;
 				break;
 			case 'f':
+			case 'F':
 				f_flag = 1;
 				break;
 			case 'h':
+			case 'H':
 				display_help();
 			case 's':
+			case 'S':
 				s_flag = 1;
 				break;
 			case 'x':
+			case 'X':
 				x_flag = 1;
 				break;
 			case '2':
-				if ((strcmp(optarg, "a")) == 0) {
+				if ((strcmp(optarg, "a")) == 0 || (strcmp(optarg, "A")) == 0) {
 					if (a_flag) {
 						fprintf(stderr, "Converting ASCII to ASCII...? Err, okay, done!\n");
 						return EXIT_FAILURE;
 					}
 					a_flag = 2;
 				}
-				if ((strcmp(optarg, "b")) == 0) {
+				if ((strcmp(optarg, "b")) == 0 || (strcmp(optarg, "B")) == 0) {
 					if (b_flag) {
 						fprintf(stderr, "Converting binary to binary...? Err, okay, done!\n");
 						return EXIT_FAILURE;
 					}
 					b_flag = 2;
 				}
-				if ((strcmp(optarg, "x")) == 0) {
+				if ((strcmp(optarg, "x")) == 0 || (strcmp(optarg, "X")) == 0) {
 					if (x_flag) {
 						fprintf(stderr, "Converting hex to hex...? Err, okay, done!\n");
 						return EXIT_FAILURE;
