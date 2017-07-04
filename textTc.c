@@ -1,3 +1,23 @@
+/*
+ * textTc
+ *
+ * 2017-07-04
+ *
+ * Copyright (C) 2017 Krotera
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 #include <stdio.h>
 #include <stdlib.h> // For portable exit and success definitions
 #include <ctype.h>
@@ -287,8 +307,8 @@ void hex_to_ascii_or_bin(char *byte, char encoding_flag, int space) {
 void display_help() {
 	printf("This program transcodes between text sequences of binary or hex bytes and ASCII characters.\n");
 	printf("================================================================================\n");
-	printf("To use, put the text to be decoded in a file named \"input.txt\" in the same\n");
-	printf("directory as the executable, then run with the appropriate arguments; e.g.:\n\n");
+	printf("To use, put the text to be transcoded in a file named \"input.txt\" in the same\n");
+	printf("directory as the executable, then run with the appropriate arguments:\n\n");
 	printf("\t\"textTc.exe -a2b\"\tto transcode the text FROM ASCII TO BINARY\n");
 	printf("\t\"textTc.exe -b2a\"\tto transcode the text FROM BINARY TO ASCII\n");
 	printf("\t\"textTc.exe -x2b\"\tto transcode the text FROM HEX TO BINARY\n");
