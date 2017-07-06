@@ -1,7 +1,7 @@
 /*
  * textTc
  *
- * 2017-07-04
+ * 2017-07-05
  *
  * Copyright (C) 2017 Krotera
  *
@@ -193,7 +193,7 @@ int main(int argc, char *argv[]) {
 
 /*****************************************************************************
  * ascii_to_bin: Converts a char to a series of eight binary bits and then   *
- * 				 writes them to output optionally followed by a space		 *
+ *               writes them to output optionally followed by a space        *
  *****************************************************************************/
 void ascii_to_bin(int curr, int space) {
 	unsigned int mask = 1 << 7;
@@ -216,7 +216,7 @@ void ascii_to_bin(int curr, int space) {
 
 /*****************************************************************************
  * ascii_to_hex: Writes a char to output as a string of two hex chars        *
- *				 optionally followed by a space								 *
+ *               optionally followed by a space                              *
  *****************************************************************************/
 void ascii_to_hex(int curr, int space) {
 	printf("%02x", curr);
@@ -227,8 +227,8 @@ void ascii_to_hex(int curr, int space) {
 
 /*****************************************************************************
  * bin_to_ascii: Converts a string of eight bits to an ASCII char or a hex   *
- *			     sequence, depending on encoding_flag, optionally followed   *
- *				 by a space and writes it to output							 *
+ *               sequence, depending on encoding_flag, optionally followed   *
+ *               by a space and writes it to output                          *
  *****************************************************************************/
 void bin_to_ascii_or_hex(char *byte, char encoding_flag, int space) {
 	unsigned int result = 0;
@@ -260,7 +260,7 @@ void bin_to_ascii_or_hex(char *byte, char encoding_flag, int space) {
 /*****************************************************************************
  * hex_to_ascii_or_bin: Converts a string of two hex chars to an ASCII char  *
  *				        or a binary string optionally followed by a space    *
- *					    and then writes it output							 *
+ *                      and then writes it output                            *
  *****************************************************************************/
 void hex_to_ascii_or_bin(char *byte, char encoding_flag, int space) {
 	unsigned int result = 0;
@@ -308,7 +308,7 @@ void hex_to_ascii_or_bin(char *byte, char encoding_flag, int space) {
 }
 
 /*****************************************************************************
- * display_help: Prints program instructions and exits					     *
+ * display_help: Prints program instructions and exits                       *
  *****************************************************************************/
 void display_help() {
 	printf("This program transcodes between text sequences of binary or hex bytes and ASCII characters.\n");
