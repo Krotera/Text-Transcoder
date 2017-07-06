@@ -259,7 +259,7 @@ void bin_to_ascii_or_hex(char *byte, char encoding_flag, int space) {
 
 /*****************************************************************************
  * hex_to_ascii_or_bin: Converts a string of two hex chars to an ASCII char  *
- *				        or a binary string optionally followed by a space    *
+ *                      or a binary string optionally followed by a space    *
  *                      and then writes it output                            *
  *****************************************************************************/
 void hex_to_ascii_or_bin(char *byte, char encoding_flag, int space) {
